@@ -87,7 +87,7 @@ function saveTasks() {
   localStorage.setItem("myTasks", JSON.stringify(active));
   localStorage.setItem("campliteTasks", JSON.stringify(completed));
 
-  // Премахнахме location.reload(), за да не прекъсваме работата на потребителя
+  
   console.log("Tasks saved automatically!");
 }
 
@@ -99,9 +99,9 @@ document.addEventListener("focusout", (el) => {
   if (el.target.classList.contains("inputText")) {
     const textarea = el.target;
     
-    // Проверка дали полето е празно
+  
     if (textarea.value.trim() === "") {
-      textarea.parentElement.remove(); // Премахва целия ред на задачата
+      textarea.parentElement.remove(); 
     } else {
       textarea.style.height = ""; 
       textarea.style.scrollTop = 0;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Manrope:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="top-title">
+
+        <p id="Tasks">Tasks</p>
+        <div id="button-to-doAndComplited">
+            <button id="button-to-do" onclick="showTodo()"><svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.55 15.075L0 11.525L1.4 10.125L3.525 12.25L7.775 8L9.175 9.425L3.55 15.075ZM3.55 7.075L0 3.525L1.4 2.125L3.525 4.25L7.775 0L9.175 1.425L3.55 7.075ZM11 13.075V11.075H20V13.075H11ZM11 5.075V3.075H20V5.075H11Z"
+                        fill="#4F46E5" />
+                </svg>To-Do</button>
+
+            <button id="button-Complited" onclick="toggleVisibility()"><svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.65 12.025L0 6.375L1.425 4.975L5.675 9.225L7.075 10.625L5.65 12.025ZM11.3 12.025L5.65 6.375L7.05 4.95L11.3 9.2L20.5 0L21.9 1.425L11.3 12.025ZM11.3 6.375L9.875 4.975L14.825 0.025L16.25 1.425L11.3 6.375Z" fill="#94A3B8"/>
+</svg>
+
+                Completed
+
+            </button>
+
+
+        </div>
+
+        <button id="User-profile"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5.26342 13.1567C4.44821 13.1567 3.73563 13.0001 3.12569 12.6868C2.51574 12.3736 2.04322 11.9417 1.70812 11.3912C1.37302 10.8406 1.20547 10.2097 1.20547 9.4985V2.81445H2.76761V9.37258C2.76761 9.82986 2.86908 10.2365 3.07202 10.5924C3.27495 10.9483 3.56279 11.2285 3.93553 11.4329C4.30828 11.6373 4.7509 11.7395 5.26342 11.7395C5.77675 11.7395 6.21906 11.6373 6.59035 11.4329C6.96163 11.2285 7.24781 10.9483 7.44888 10.5924C7.64994 10.2365 7.75048 9.82986 7.75048 9.37258V2.81445H9.31262V9.4985C9.31262 10.2097 9.14486 10.8406 8.80935 11.3912C8.47385 11.9417 8.00278 12.3736 7.39616 12.6868C6.78954 13.0001 6.07863 13.1567 5.26342 13.1567Z"
+                    fill="#404DBE" />
+            </svg>
+        </button>
+
+    </div>
+
+    <div id="comlitetasks-list" style="display: none;">
+        <div id="Completed-Today">
+            <p class="p-title">Completed Today</p>
+        </div>
+
+        <div id="Older">
+            <p class="p-title">Older</p>
+        </div>
+    </div>
+
+    <div id="To-Do">
+        <div id="Focus-id">
+            <div id="titles">
+                <h1>Focus</h1>
+                <p id="task-count">0 items remaining</p>
+            </div>
+
+            <button id="AddNewTask-button" onclick="createTaskElement()"><svg width="14" height="14" viewBox="0 0 14 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="white" />
+                </svg>
+                <p>Add new task</p>
+            </button>
+        </div>
+
+        <div id="tasks-list">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

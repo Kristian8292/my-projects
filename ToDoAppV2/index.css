@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(210, 40%, 98%);
+}
+
+#top-title {
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  border-bottom: 2px solid #f1f5f9;
+  background: #ffffff;
+  position: relative;
+}
+
+#button-to-doAndComplited {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+#button-to-do,
+#button-Complited {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#button-to-do {
+  color: #4f46e5;
+}
+
+#User-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+}
+
+#Tasks {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4f46e5;
+  letter-spacing: -0.6px;
+}
+
+#To-Do {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 48px 32px 120px 32px;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+#Focus-id {
+  display: flex;
+  width: 304px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#titles h1 {
+  color: #161c27;
+  font-family: Manrope;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+}
+
+#titles p {
+  color: rgba(69, 70, 83, 1);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+#AddNewTask-button {
+  display: flex;
+  border: none;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: #404dbe;
+  cursor: pointer;
+  width: 100%;
+}
+
+#AddNewTask-button p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+#tasks-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#tasks-list > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s ease;
+}
+
+#tasks-list > div:last-child {
+  border-bottom: none;
+}
+
+#tasks-list > div:hover {
+  background: #f8fafc;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+  flex-shrink: 0;
+}
+
+.inputText {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #1e293b;
+  background: transparent;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.inputText::placeholder {
+  color: #94a3b8;
+}
+
+
+#comlitetasks-list {
+  
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+#Completed-Today,
+#Older {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.p-title {
+  
+  font-family: 'Manrope', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  
+}
+
+#Completed-Today > div,
+#Older > div {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+}
+
+.input-p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #94a3b8;
+  text-decoration: line-through;
+  margin: 0;
+}

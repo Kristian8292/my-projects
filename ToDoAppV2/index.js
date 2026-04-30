@@ -58,14 +58,12 @@ if (compliteTasks.length > 0) {
 
 function toggleVisibility() {
   const completedContainer = document.getElementById("comlitetasks-list");
-  const focusSection = document.getElementById("Focus-id");
-  const tasksList = document.getElementById("tasks-list");
+  const todoContainer = document.getElementById("To-Do");
   const btnTodo = document.getElementById("button-to-do");
   const btnCompleted = document.getElementById("button-Complited");
 
   completedContainer.style.display = "block";
-  focusSection.style.display = "none";
-  tasksList.style.display = "none";
+  todoContainer.style.display = "none";
 
   btnCompleted.style.color = "#4F46E5";
   btnCompleted.querySelector("path").setAttribute("fill", "#4F46E5");
@@ -75,14 +73,12 @@ function toggleVisibility() {
 
 function showTodo() {
   const completedContainer = document.getElementById("comlitetasks-list");
-  const focusSection = document.getElementById("Focus-id");
-  const tasksList = document.getElementById("tasks-list");
+  const todoContainer = document.getElementById("To-Do");
   const btnTodo = document.getElementById("button-to-do");
   const btnCompleted = document.getElementById("button-Complited");
 
   completedContainer.style.display = "none";
-  focusSection.style.display = "flex";
-  tasksList.style.display = "block";
+  todoContainer.style.display = "flex";
 
   btnTodo.style.color = "#4F46E5";
   btnTodo.querySelector("path").setAttribute("fill", "#4F46E5");
@@ -173,6 +169,7 @@ document.addEventListener("focusin", (el) => {
   if (el.target.classList.contains("inputText")) {
     const textarea = el.target;
     textarea.style.transition = "height 0.6s ease";
+    
     textarea.style.height = textarea.scrollHeight + "px";
   }
 });

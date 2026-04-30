@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter;
 }
 
 body {
@@ -33,7 +34,6 @@ body {
   background: none;
   border: none;
   color: #94a3b8;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
@@ -50,7 +50,6 @@ body {
 }
 
 #Tasks {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #4f46e5;
@@ -72,6 +71,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+  color: rgba(22, 28, 39, 1);
 }
 
 #titles h1 {
@@ -81,14 +81,6 @@ body {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.8px;
-}
-
-#titles p {
-  color: rgba(69, 70, 83, 1);
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28.8px;
 }
 
 #AddNewTask-button {
@@ -105,7 +97,6 @@ body {
 
 #AddNewTask-button p {
   color: #fff;
-  font-family: Inter;
   font-size: 16px;
 }
 
@@ -118,6 +109,7 @@ body {
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  gap: 0px;
 }
 
 #tasks-list > div {
@@ -128,6 +120,7 @@ body {
   background: #ffffff;
   border-bottom: 1px solid #f1f5f9;
   transition: background 0.2s ease;
+  height: 100px;
 }
 
 #tasks-list > div:last-child {
@@ -139,11 +132,11 @@ body {
 }
 
 .checkbox {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 26px;
   margin-top: 4px;
   cursor: pointer;
-  accent-color: #4f46e5;
+  accent-color: rgba(64, 77, 190, 1);
   flex-shrink: 0;
 }
 
@@ -151,22 +144,25 @@ body {
   flex: 1;
   border: none;
   outline: none;
-  resize: none;
-  font-family: "Inter", sans-serif;
+  
+
   font-size: 18px;
   color: #1e293b;
   background: transparent;
-  line-height: 1.4;
   overflow: hidden;
+  align-items: center;
+  font-weight: 400;
+
+  line-height: 28.8px;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 
 .inputText::placeholder {
   color: #94a3b8;
 }
 
-
 #comlitetasks-list {
-  
   max-width: 1024px;
   margin: 0 auto;
   padding: 50px 32px;
@@ -182,17 +178,18 @@ body {
   margin-left: 15%;
   gap: 24px;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .p-title {
-  
-  font-family: 'Manrope', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: #1e293b;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 8px;
-  
+  line-height: 31.2px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgba(22, 28, 39, 1);
 }
 
 #Completed-Today > div,
@@ -206,9 +203,51 @@ body {
 }
 
 .input-p {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  color: #94a3b8;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(22, 28, 39, 0.5);
   text-decoration: line-through;
+  text-decoration-thickness: 1px;
   margin: 0;
+  vertical-align: middle;
+}
+
+#task-count {
+  color: rgba(69, 70, 83, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(./inter-latin-ext.ttf) format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(./inter-latin.ttf) format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(./Manrope.ttf);
+  font-weight: 100 900;
 }

@@ -1,5 +1,6 @@
 let activeTasks = getactiveTasks();
 let compliteTasks = getCompleteTasks();
+let myName = "Kiki";
 
 function getCompleteTasks() {
   const savedTasksText = localStorage.getItem("campliteTasks");

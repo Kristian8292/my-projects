@@ -145,3 +145,5 @@ document.addEventListener("change", (el) => {
     saveTasks();
   }
 });
+
+console.log("hello from user 2");

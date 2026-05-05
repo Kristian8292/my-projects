@@ -5,7 +5,10 @@
     "rootDir": "./src",
     "outDir": "./dist",
     
-    "module": "nodenext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "target": "esnext",
     "types": [],
 

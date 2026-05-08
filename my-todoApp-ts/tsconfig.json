@@ -4,12 +4,12 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
-    
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "target": "esnext",
+    "target": "ESNext",
     "types": [],
 
     "sourceMap": true,
